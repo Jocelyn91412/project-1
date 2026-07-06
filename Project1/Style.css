@@ -1,0 +1,27 @@
+        h1 {
+            color:rgb(184, 184, 247);
+            font-size:100 px;
+        }
+        body {
+            background-color: rgb(254, 232, 236);
+            font-family:'Courier New', Courier, monospace;
+        }
+        h2 {
+            color:rgb(144, 212, 255);
+            font-size:80 px;
+        }
+        ul {
+            color:rgb(239, 172, 172);
+            font:60 px;
+        }
+        ol {
+            color:rgb(241, 195, 255);
+            font-size:60 px;
+        }
+        nav {
+            color:black;
+            font-size:75 px;
+        }
+        nav-hover{
+            color:rgb(184, 184, 247);
+        }
