@@ -16,7 +16,7 @@
         }
         ol {
             color:rgb(255, 255, 255);
-            font-size:75px;
+            font-size:60px;
         }
         img{
             width:500px;
@@ -27,7 +27,7 @@
             padding: 14px 20px;         
             display: inline-block;       
             transition: all 0.3 s ease;
-            font-size:60px;
+            font-size:55px;
             }
         .navbar:hover {
              color: #ffffff;             
