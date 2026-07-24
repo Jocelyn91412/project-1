@@ -24,7 +24,8 @@ body{
 }
 h1{
     font-size: 55px;
-    text-decoration:wavy;
+    text-decoration-line: underline;
+    text-decoration-style:wavy;
 }
 h2{
     font-size: 30px;
