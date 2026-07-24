@@ -5,15 +5,15 @@ body{
 .box{
   color: black;  
 }
- .navbar{
-    color:rgb(0, 0, 0);
-    background-color:#c96969;
-    padding: 14px 20px;         
-    display: inline-block;       
+.navbar {
+    background-color: #c96969;
+    padding: 14px 20px;
+}
+
+.back-button {
+    color: black;
+    font-size: 55px;
+    text-decoration: none;
+    display: inline-block;
     transition: all 0.3s ease;
-    font-size:55px;
-    }
-.navbar:hover {
-    color: #c96969;             
-    background-color:white); 
-    }
+}
