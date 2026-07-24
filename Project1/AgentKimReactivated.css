@@ -17,7 +17,7 @@ body{
     display: inline-block;
     transition: all 0.3s ease;
 }
-.navbar:hover {
+.back-button:hover {
     color:#c96969;             
     background-color:white; 
     }
