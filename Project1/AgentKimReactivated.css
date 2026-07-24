@@ -7,20 +7,19 @@ body{
 }
 .navbar {
   height: 80px;
-  background:
-    linear-gradient(to right,
+  background-image:
+    linear-gradient(
+      to right,
       #c96969 0%,
       #c96969 40%,
-      rgba(79, 41, 41, .3) 70%,
-      rgba(79, 41, 41, 0) 100%
+      rgba(201, 105, 105, 0.5) 70%,
+      rgba(201, 105, 105, 0) 100%
     ),
-    url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200");
+    url("https://picsum.photos/1200/200");
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  color: white;
 }
 
 .back-button {
