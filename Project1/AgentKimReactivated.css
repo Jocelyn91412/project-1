@@ -7,7 +7,6 @@ body{
 }
 .navbar {
     background-color: #c96969;
-    padding: 14px 20px;
 }
 
 .back-button {
@@ -15,9 +14,11 @@ body{
     font-size: 55px;
     text-decoration: none;
     display: inline-block;
+    padding: 14px 20px;
     transition: all 0.3s ease;
 }
+
 .back-button:hover {
-    color:#c96969;             
-    background-color:white; 
-    }
+    color: #c96969;
+    background-color: white;
+}
