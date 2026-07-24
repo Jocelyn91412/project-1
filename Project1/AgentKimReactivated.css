@@ -6,7 +6,21 @@ body{
   color: black;  
 }
 .navbar {
-    background-color: #c96969;
+  height: 80px;
+  background:
+    linear-gradient(to right,
+      #c96969 0%,
+      #c96969 40%,
+      rgba(79, 41, 41, .3) 70%
+      rgba(79, 41, 41, 0) 100%
+    ),
+    url("https://image.idntimes.com/post/20260627/clipdown_27f7e555-187c-43af-8cf9-a8c28671f67a.jpg?tr=w-640");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
 }
 
 .back-button {
