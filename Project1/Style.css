@@ -1,6 +1,6 @@
 h1 {
     color: rgb(184, 184, 247);
-    font-size: 150px;
+    font-size: 90px;
     text-align: center;
     animation: glow 2s infinite alternate;
 }
@@ -16,7 +16,7 @@ h1 {
 
 h2 {
     color: rgb(183, 196, 253);
-    font-size: 90px;
+    font-size: 55px;
     text-align: center;
 }
 
@@ -30,7 +30,7 @@ h2 {
 .info {
     text-align: center;
     color: white;
-    font-size: 40px;
+    font-size: 28px;
 }
 
 .ol {
