@@ -46,7 +46,6 @@ h3{
 }
 body{
     font-family: 'Courier New', Courier, monospace;
-    cursor: url("images/star-cursor.png"), auto;
 }
 .link{
     color:#c96969;
