@@ -131,16 +131,17 @@ img:hover {
     color: black;
     font-weight: bold;
 }
+/* Rating box */
 .feedback {
     background-color: white;
     display: inline-block;
-    padding: 8px 12px;
+    padding: 8px 15px;
     border-radius: 10px;
     margin: 10px 0;
 }
 
 
-/* Stars */
+/* Star container */
 .rating {
     display: flex;
     flex-direction: row-reverse;
@@ -148,24 +149,30 @@ img:hover {
 }
 
 
+/* Hide radio buttons */
 .rating input {
-    display: none;
+    position: absolute;
+    opacity: 0;
 }
 
 
+/* Stars */
 .rating label {
-    font-size: 32px;
+    font-size: 50px;
     color: #ccc;
     cursor: pointer;
-    transition: 0.2s;
+    transition: color 0.2s ease;
 }
+
+
+/* Hover */
 .rating label:hover,
 .rating label:hover ~ label {
     color: gold;
 }
 
 
-/* Star selected */
+/* Clicked */
 .rating input:checked ~ label {
     color: gold;
 }
