@@ -79,3 +79,6 @@ body{
   transform: translateX(-50%) scale(1);
   pointer-events: auto;
 }
+.box div {
+  box-sizing: border-box;
+}
