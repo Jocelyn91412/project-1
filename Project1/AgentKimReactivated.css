@@ -1,6 +1,7 @@
 body{
     background-color: black;
     color:#c96969
+    cursor: url("images/star-cursor.png") 16 16, auto !important;
 }
 .box{
   color: black;  
