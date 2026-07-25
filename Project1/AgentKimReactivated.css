@@ -49,4 +49,33 @@ body{
 }
 .link{
     color:#c96969;
+}.card {
+  position: relative;
+  width: 100%;
+}
+
+.info-box {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.8);
+
+  width: 300px;
+  min-height: 200px;
+
+  background: #333;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+  z-index: 100;
+}
+
+.card:hover .info-box {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+  pointer-events: auto;
 }
