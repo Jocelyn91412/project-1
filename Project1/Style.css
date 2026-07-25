@@ -131,3 +131,31 @@ img:hover {
     color: black;
     font-weight: bold;
 }
+.feedback {
+    background-color: white;
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+
+/* Stars */
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+
+.rating input {
+    display: none;
+}
+
+
+.rating label {
+    font-size: 32px;
+    color: #ccc;
+    cursor: pointer;
+    transition: 0.2s;
+}
