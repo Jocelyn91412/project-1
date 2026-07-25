@@ -159,3 +159,13 @@ img:hover {
     cursor: pointer;
     transition: 0.2s;
 }
+.rating label:hover,
+.rating label:hover ~ label {
+    color: gold;
+}
+
+
+/* Star selected */
+.rating input:checked ~ label {
+    color: gold;
+}
