@@ -18,7 +18,7 @@ body{
         url("https://prod-images.viu.com/3066795/1f12b2478fcfb50291bbaf38d00df0c18e9bb976");
 
     background-size: cover;
-    background-position: center;
+    background-position: center 40%;
     background-repeat: no-repeat;
 
     display: flex;
