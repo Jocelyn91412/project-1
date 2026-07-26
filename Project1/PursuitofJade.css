@@ -3,7 +3,7 @@ body{
     color:#E5C158;
 }
 .box{
-  color:#E5C158(0, 33, 115);  
+  color:#E5C158;  
 }
 .top-navbar {
     height: 150px;
@@ -18,7 +18,7 @@ body{
         url("https://images.plex.tv/photo?size=large-1280&url=https:%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FyISTOXAMVpHLoNZsaK4LIoLZM6D.jpg");
 
     background-size: cover;
-    background-position: center 15%;
+    background-position: center 23%;
     background-repeat: no-repeat;
 
     display: flex;
@@ -99,7 +99,12 @@ body{
 .description {
     width: 80%;
     margin: 40px auto;
-    color: #E5C158;
+    color: #161616;
     font-size: 25px;
     text-align: center;
+}
+.video {
+    width: 100%;
+    height: 600px;   /* Increase this value */
+    border: none;
 }
