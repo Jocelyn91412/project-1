@@ -1,0 +1,105 @@
+body{
+    background-color:#161616;
+    color:#E5C158;
+}
+.box{
+  color:#E5C158(0, 33, 115);  
+}
+.top-navbar {
+    height: 150px;
+    background-image:
+        linear-gradient(
+            to right,
+            #991B1B 0%,
+            #991B1B 40%,
+            rgba(153,27,27,0.5) 70%,
+            rgba(153,27,27,0) 100%
+        ),
+        url("https://images.plex.tv/photo?size=large-1280&url=https:%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FyISTOXAMVpHLoNZsaK4LIoLZM6D.jpg");
+
+    background-size: cover;
+    background-position: center 15%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.back-button {
+    color:#991B1B;
+    background-color:white;
+    font-size: 25px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 14px 20px;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    color: #fffdfa;
+    background-color:#E5C158;
+}
+h1{
+    font-size: 55px;
+    color:#E5C158
+}
+h2{
+    font-size: 30px;
+}
+h3{
+   font-size: 25px;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+.link{
+    color:#E5C158;
+}.card {
+  position: relative;
+  width: 100%;
+}
+
+.info-box {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.8);
+
+  width: 300px;
+  min-height: 200px;
+
+  background: #333;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+  z-index: 100;
+}
+
+.card:hover .info-box {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+  pointer-events: auto;
+}
+.box div {
+  box-sizing: border-box;
+}
+.first-card .info-box {
+    left: 0;
+    transform: scale(0.8);
+}
+
+.first-card:hover .info-box {
+    transform: scale(1);
+}
+.description {
+    width: 80%;
+    margin: 40px auto;
+    color: #E5C158;
+    font-size: 25px;
+    text-align: center;
+}
