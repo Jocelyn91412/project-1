@@ -1,24 +1,24 @@
 body{
-    background-color:#161616;
-    color:#E5C158;
+    background-color:#1C1A1E ;
+    color:#FFFDF5 ;
 }
 .box{
-  color:#161616;  
+  color:#1C1A1E ;  
 }
 .top-navbar {
     height: 150px;
     background-image:
         linear-gradient(
             to right,
-            #991B1B 0%,
-            #991B1B 40%,
-            rgba(153,27,27,0.5) 70%,
-            rgba(153,27,27,0) 100%
+            #FFFDF5  0%,
+            #FFFDF5  40%,
+            rgba(28, 26, 30,0.5) 70%,
+            rgba(28, 26, 30,0) 100%
         ),
-        url("https://images.plex.tv/photo?size=large-1280&url=https:%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FyISTOXAMVpHLoNZsaK4LIoLZM6D.jpg");
+        url("https://prod-images.viu.com/3066795/1f12b2478fcfb50291bbaf38d00df0c18e9bb976");
 
     background-size: cover;
-    background-position: center 40%;
+    background-position: center;
     background-repeat: no-repeat;
 
     display: flex;
@@ -27,8 +27,8 @@ body{
 }
 
 .back-button {
-    color:#991B1B;
-    background-color:white;
+    color:white;
+    background-color:#D4AF37;
     font-size: 25px;
     text-decoration: none;
     display: inline-block;
@@ -37,12 +37,12 @@ body{
 }
 
 .back-button:hover {
-    color: #fffdfa;
-    background-color:#E5C158;
+    color: #FFFDF5 ;
+    background-color:#1C1A1E ;
 }
 h1{
     font-size: 55px;
-    color:#E5C158
+    color:#FFFDF5 
 }
 h2{
     font-size: 30px;
@@ -54,7 +54,7 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 .link{
-    color:#E5C158;
+    color:#FFFDF5 ;
 }.card {
   position: relative;
   width: 100%;
@@ -99,7 +99,7 @@ body{
 .description {
     width: 80%;
     margin: 40px auto;
-    color: #161616;
+    color: #1C1A1E ;
     font-size: 25px;
     text-align: center;
 }
