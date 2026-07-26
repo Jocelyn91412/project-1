@@ -103,8 +103,24 @@ body{
     font-size: 25px;
     text-align: center;
 }
+.media {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    gap: 20px;
+    align-items: center;
+}
+
+.poster {
+    width: 250px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
 .video {
-    flex: 1;
-    height: 600px;
+    flex: 1;  
+    height: 500px;  
     border: none;
 }
