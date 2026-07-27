@@ -1,0 +1,134 @@
+body{
+    margin:0;
+    font-family:'Courier New', Courier, monospace;
+    color:#A9B2C3;
+
+    background-image:
+    linear-gradient(
+        rgba(11,12,16,0.75),
+        rgba(11,12,16,0.75)
+    ),
+    url("https://logos-world.net/wp-content/uploads/2023/03/Straw-Hat-Symbol.png");
+  
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+}
+.box{
+  color: 1a1f41;  
+}
+.navbar {
+  height: 200px;
+  background-image:
+    linear-gradient(
+      to right,
+      #FCD116 0%,
+      #FCD116 40%,
+      rgba(252, 209, 22, 0.5) 70%,
+      rgba(252, 209, 22, 0) 100%
+    ),
+ url("https://i.redd.it/s4xxssdfocde1.jpeg");
+  background-size: cover;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+}
+
+.back-button {
+    color:#DF1623 ;
+    background-color:black;
+    font-size: 25px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 14px 20px;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    color: #DF1623;
+    background-color: white;
+}
+h1{
+    font-size: 55px;
+    color:#FCD116;
+}
+h2{
+    font-size: 30px;
+    color:#FCD116;
+}
+h3{
+   font-size: 25px;
+   color:#FCD116;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+.link{
+    color:white;
+}.card {
+  position: relative;
+  width: 100%;
+}
+
+.info-box {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.8);
+
+  width: 300px;
+  min-height: 200px;
+
+  background: #333;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+  z-index: 100;
+}
+
+.card:hover .info-box {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+  pointer-events: auto;
+}
+.box div {
+  box-sizing: border-box;
+}
+.first-card .info-box {
+    left: 0;
+    transform: scale(0.8);
+}
+
+.first-card:hover .info-box {
+    transform: scale(1);
+}
+.description {
+    width: 80%;
+    margin: 40px auto;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+.bottom-right{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap; /* Keeps them all on one line */
+}
+
+.bottom-right img{
+    width: 120px;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.bottom-right img:hover{
+    transform: scale(1.08);
+}
