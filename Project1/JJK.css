@@ -1,29 +1,29 @@
 body{
-    background-color: #0B0C10;
-    color:#C5C6C7 ;
+    background-color: black;
+    color:#c5c9dc;
 }
 .box{
-  color: #1E2640;  
+  color: 1a1f41;  
 }
 .navbar {
   height: 200px;
   background-image:
     linear-gradient(
       to right,
-      #1F2833 0%,
-      #1F2833  40%,
-      rgba(12, 16, 20, 0.5) 70%,
-      rgba(12, 16, 20, 0) 100%
+      #1a1f41 0%,
+      #1a1f41 40%,
+      rgba(26, 31, 65, 0.5) 70%,
+      rgba(26, 31, 65, 0) 100%
     ),
- url("https://www.gamersdecide.com/sites/default/files/2023-04/main222.jpg");
+ url("https://i.redd.it/s4xxssdfocde1.jpeg");
   background-size: cover;
   background-position: center 20%;
   background-repeat: no-repeat;
 }
 
 .back-button {
-    color: #FFFFFF;
-    background-color:#29C5FF;
+    color:white ;
+    background-color: rgb(89, 172, 254);
     font-size: 25px;
     text-decoration: none;
     display: inline-block;
@@ -32,35 +32,27 @@ body{
 }
 
 .back-button:hover {
-    color: #29C5FF;
-    background-color:#FFFFFF;
+    color: #a32f2f;
+    background-color: black;
 }
-
 h1{
     font-size: 55px;
-    color:#ffffff;
+    color:whitesmoke;
 }
-
 h2{
     font-size: 30px;
-    color:#FFFFFF;
+    color:whitesmoke;
 }
-
 h3{
    font-size: 25px;
-   color:#FFFFFF;
+   color:whitesmoke;
 }
-
 body{
     font-family: 'Courier New', Courier, monospace;
-    color:#A9B2C3;
 }
-
 .link{
-    color:#29C5FF;
-}
-
-.card {
+    color:white;
+}.card {
   position: relative;
   width: 100%;
 }
@@ -90,11 +82,9 @@ body{
   transform: translateX(-50%) scale(1);
   pointer-events: auto;
 }
-
 .box div {
   box-sizing: border-box;
 }
-
 .first-card .info-box {
     left: 0;
     transform: scale(0.8);
@@ -103,44 +93,10 @@ body{
 .first-card:hover .info-box {
     transform: scale(1);
 }
-
 .description {
     width: 80%;
     margin: 40px auto;
     color: white;
     font-size: 25px;
     text-align: center;
-}
-
-.character-container{
-    display:flex;
-    justify-content:center;
-    gap:25px;
-    width:90%;
-    margin:40px auto;
-}
-
-.character-card{
-    text-align:center;
-    width:180px;
-}
-
-.character-card img{
-    width:180px;
-    height:225px;
-    object-fit:cover;
-    border-radius:10px;
-
-    transition:transform 0.3s;
-}
-
-/* Hover effect */
-.character-card img:hover{
-    transform:scale(1.08);
-}
-
-.character-card h3{
-    margin-top:10px;
-    color:white;
-    font-family:Arial, sans-serif;
 }
