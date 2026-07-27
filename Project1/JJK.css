@@ -120,10 +120,8 @@ body{
 .character-card img{
     width:180px;
     height:225px;
-    object-fit:cover;
-    border-radius:10px;
-
-    transition:transform 0.3s;
+    object-fit:contain;
+    background:#1E2640;
 }
 
 
