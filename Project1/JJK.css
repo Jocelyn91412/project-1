@@ -42,6 +42,7 @@ h1{
 h2{
     font-size: 30px;
     color:#FFFFFF;
+}
 h3{
    font-size: 25px;
    color:#FFFFFF;
@@ -53,7 +54,7 @@ body{
 .link{
     color:#29C5FF ;
 }
-}.card {
+.card {
   position: relative;
   width: 100%;
 }
