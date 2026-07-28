@@ -1,6 +1,5 @@
 body{
-    background-color: black;
-    color:#F4F5F7;
+    background-color: #F4F5F7;
 }
 .box{
   color: #88BC95;  
@@ -41,7 +40,7 @@ h1{
 }
 h2{
     font-size: 30px;
-    color:#88BC95;
+    color:#3A7DFF;
 }
 h3{
    font-size: 25px;
