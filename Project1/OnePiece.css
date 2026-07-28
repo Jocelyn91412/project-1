@@ -16,7 +16,7 @@ body{
     background-repeat:no-repeat;
 }
 .box{
-  color: 1a1f41;  
+  color: #1A1F41;  
 }
 .navbar {
   height: 200px;
@@ -122,8 +122,8 @@ body{
 }
 
 .bottom-right img{
-    width: 120px;
-    height: 180px;
+    width: 360px;
+    height: 540px;
     object-fit: contain;
     border-radius: 10px;
     transition: transform 0.3s;
