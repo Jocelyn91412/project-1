@@ -1,1 +1,102 @@
+body{
+    background-color: black;
+    color:#F4F5F7;
+}
+.box{
+  color: #88BC95;  
+}
+.navbar {
+  height: 200px;
+  background-image:
+    linear-gradient(
+      to right,
+      #3A7DFF 0%,
+      #3A7DFF 40%,
+      rgba(58, 125, 255, 0.5) 70%,
+      rgba(58, 125, 255, 0) 100%
+    ),
+ url("https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/04/maxresdefault-28.jpg?q=70&fit=contain&w=750&h=422&dpr=1");
+  background-size: cover;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+}
 
+.back-button {
+    color: #3A7DFF;
+    background-color:#88BC95;
+    font-size: 25px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 14px 20px;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    color: #FFD700;
+    background-color: #8DDEFC;
+}
+h1{
+    font-size: 55px;
+    color:#88BC95;
+}
+h2{
+    font-size: 30px;
+    color:#88BC95;
+}
+h3{
+   font-size: 25px;
+  color:#88BC95;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+.link{
+    color:#3A7DFF;
+}.card {
+  position: relative;
+  width: 100%;
+}
+
+.info-box {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.8);
+
+  width: 300px;
+  min-height: 200px;
+
+  background: #333;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+  z-index: 100;
+}
+
+.card:hover .info-box {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+  pointer-events: auto;
+}
+.box div {
+  box-sizing: border-box;
+}
+.first-card .info-box {
+    left: 0;
+    transform: scale(0.8);
+}
+
+.first-card:hover .info-box {
+    transform: scale(1);
+}
+.description {
+    width: 80%;
+    margin: 40px auto;
+    color: #88BC95;
+    font-size: 25px;
+    text-align: center;
+}
