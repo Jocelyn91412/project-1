@@ -42,7 +42,7 @@ h2 {
 
 
 body {
-     cursor: url("images/cursor.png") 32 32, auto;
+     cursor: url("images/star.png") 32 32, auto;
     background: linear-gradient(
         45deg,
         rgb(175, 220, 255),
