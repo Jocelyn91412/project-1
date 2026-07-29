@@ -164,11 +164,11 @@ body{
 }
 @keyframes sailAcross {
     from {
-        left: -220px;
+        left: calc(100% + 220px);
     }
 
     to {
-        left: calc(100% + 220px);
+        left: -220px;
     }
 }
 
