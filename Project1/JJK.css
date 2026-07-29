@@ -120,3 +120,91 @@ body{
 .bottom-right img:hover{
     transform: scale(1.08);
 }
+
+.gojo-hover {
+    position: relative;
+}
+
+
+/* Makes Hollow Purple cover the screen */
+.hollow-purple {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 999;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 0.3s ease;
+}
+
+
+.hollow-purple img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    filter: drop-shadow(0 0 50px purple);
+
+    transform: scale(0.5);
+
+    transition: transform 0.5s ease;
+}
+
+
+/* When hovering Gojo */
+.gojo-hover:hover .hollow-purple {
+    opacity: 1;
+}
+
+
+.gojo-hover:hover .hollow-purple img {
+    transform: scale(1);
+}
+
+
+/* White flash */
+.purple-flash {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: white;
+
+    z-index: 1000;
+
+    opacity: 0;
+
+    pointer-events: none;
+}
+
+
+.gojo-hover:hover .purple-flash {
+
+    animation: purpleFlash 0.4s;
+
+}
+
+
+@keyframes purpleFlash {
+
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
