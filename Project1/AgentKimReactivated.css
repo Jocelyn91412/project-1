@@ -1,5 +1,5 @@
 body{
-    cursor: url("images/star.png") 32 32, auto;
+    cursor: url("../images/star.png") 32 32, auto;
     background-color: black;
     color:#c96969;
 }
