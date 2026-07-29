@@ -300,6 +300,99 @@ body{
 
 
 
+.yuji-hover {
+    position: relative;
+}
+
+
+/* Black Flash impact around Yuji */
+
+.black-flash {
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 250px;
+    height: 250px;
+
+    transform: translate(-50%, -50%) scale(0);
+
+    pointer-events: none;
+
+    opacity: 0;
+
+    z-index: 10;
+
+
+    background:
+    radial-gradient(
+        circle,
+        white 0%,
+        white 10%,
+        black 20%,
+        transparent 55%
+    );
+
+
+    filter:
+    blur(2px)
+    drop-shadow(0 0 20px black);
+
+}
+
+
+/* Jagged black lightning */
+
+.black-flash::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -80px;
+    left: -80px;
+
+    width: 410px;
+    height: 410px;
+
+
+    background:
+
+    conic-gradient(
+        transparent 0deg,
+        black 20deg,
+        transparent 40deg,
+        black 80deg,
+        transparent 100deg,
+        black 150deg,
+        transparent 180deg,
+        black 230deg,
+        transparent 260deg,
+        black 320deg,
+        transparent 360deg
+    );
+
+
+    clip-path: polygon(
+        50% 0%,
+        60% 35%,
+        100% 50%,
+        60% 65%,
+        50% 100%,
+        40% 65%,
+        0% 50%,
+        40% 35%
+    );
+
+
+    animation: blackLightning 0.1s infinite;
+
+}
+
+
+
 /* Activate Black Flash */
 
 .yuji-hover:hover .black-flash {
