@@ -132,3 +132,72 @@ body{
 .bottom-right img:hover{
     transform: scale(1.08);
 }
+.ocean {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+/* Animated waves */
+.waves {
+    position: absolute;
+    inset: 0;
+    background: url("waves.png") repeat-x bottom;
+    background-size: auto 100%;
+    animation: waveScroll 12s linear infinite;
+}
+
+/* Ship */
+.going-merry {
+    position: absolute;
+    bottom: 40px;
+    left: -220px;
+    width: 180px;
+
+    animation:
+        sailAcross 25s linear infinite,
+        bob 2.5s ease-in-out infinite;
+}
+
+@keyframes sailAcross {
+    from {
+        left: -220px;
+    }
+
+    to {
+        left: calc(100% + 220px);
+    }
+}
+
+@keyframes bob {
+    0%,100% {
+        transform: translateY(0px) rotate(-2deg);
+    }
+
+    25% {
+        transform: translateY(-8px) rotate(1deg);
+    }
+
+    50% {
+        transform: translateY(3px) rotate(3deg);
+    }
+
+    75% {
+        transform: translateY(-6px) rotate(-1deg);
+    }
+}
+
+@keyframes waveScroll {
+    from {
+        background-position-x: 0;
+    }
+
+    to {
+        background-position-x: -1200px;
+    }
+}
+
