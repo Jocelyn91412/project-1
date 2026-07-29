@@ -207,105 +207,208 @@ body{
         opacity: 0;
     }
 
-}
 .yuji-hover {
     position: relative;
 }
 
 
-/* Black Flash energy */
+/* Black Flash impact around Yuji */
+
 .black-flash {
-    position: fixed;
 
-    top: 0;
-    left: 0;
+    position: absolute;
 
-    width: 100vw;
-    height: 100vh;
+    top: 50%;
+    left: 50%;
 
-    z-index: 999;
+    width: 250px;
+    height: 250px;
+
+    transform: translate(-50%, -50%) scale(0);
 
     pointer-events: none;
+
     opacity: 0;
 
+    z-index: 10;
+
+
     background:
-        radial-gradient(circle,
+    radial-gradient(
+        circle,
         white 0%,
-        #000000 15%,
-        #1a1a1a 35%,
-        transparent 70%);
+        white 10%,
+        black 20%,
+        transparent 55%
+    );
+
 
     filter:
-        drop-shadow(0 0 30px black)
-        drop-shadow(0 0 80px white);
+    blur(2px)
+    drop-shadow(0 0 20px black);
 
 }
 
 
-/* Lightning cracks */
+/* Jagged black lightning */
+
 .black-flash::before {
+
     content: "";
 
     position: absolute;
 
-    width: 100%;
-    height: 100%;
+    top: -80px;
+    left: -80px;
+
+    width: 410px;
+    height: 410px;
+
 
     background:
-        repeating-conic-gradient(
-            from 0deg,
-            transparent 0deg,
-            black 5deg,
-            transparent 10deg
-        );
 
-    opacity: 0.8;
+    conic-gradient(
+        transparent 0deg,
+        black 20deg,
+        transparent 40deg,
+        black 80deg,
+        transparent 100deg,
+        black 150deg,
+        transparent 180deg,
+        black 230deg,
+        transparent 260deg,
+        black 320deg,
+        transparent 360deg
+    );
 
-    animation: lightning 0.15s infinite;
+
+    clip-path: polygon(
+        50% 0%,
+        60% 35%,
+        100% 50%,
+        60% 65%,
+        50% 100%,
+        40% 65%,
+        0% 50%,
+        40% 35%
+    );
+
+
+    animation: blackLightning 0.1s infinite;
+
 }
 
 
-/* Activate when hovering Yuji */
+
+/* Activate Black Flash */
+
 .yuji-hover:hover .black-flash {
 
-    animation: blackFlashAttack 0.5s ease;
+    animation: blackImpact 0.35s ease-out;
 
 }
 
 
-/* Explosion */
-@keyframes blackFlashAttack {
+
+/* Punch impact */
+
+@keyframes blackImpact {
+
 
     0% {
+
         opacity: 1;
-        transform: scale(0.2);
+
+        transform:
+        translate(-50%, -50%)
+        scale(0.2);
+
     }
 
-    30% {
+
+    25% {
+
         opacity: 1;
-        transform: scale(1.2);
+
+        transform:
+        translate(-50%, -50%)
+        scale(1.4);
+
     }
 
-    60% {
+
+    50% {
+
         opacity: 0.8;
+
     }
+
 
     100% {
+
         opacity: 0;
-        transform: scale(1.5);
+
+        transform:
+        translate(-50%, -50%)
+        scale(2);
+
     }
+
 }
 
 
-/* Moving black lightning */
-@keyframes lightning {
 
-    from {
+/* Lightning movement */
+
+@keyframes blackLightning {
+
+
+    0% {
+
         transform: rotate(0deg);
+
     }
 
-    to {
+
+    100% {
+
         transform: rotate(360deg);
+
+    }
+
+}
+
+
+
+/* Screen impact shake */
+
+body:has(.yuji-hover:hover) {
+
+    animation: blackShake 0.12s;
+
+}
+
+
+@keyframes blackShake {
+
+
+    0% {
+        transform: translate(8px, 0);
+    }
+
+
+    25% {
+        transform: translate(-8px, 4px);
+    }
+
+
+    50% {
+        transform: translate(5px, -5px);
+    }
+
+
+    100% {
+        transform: translate(0);
     }
 
 }
