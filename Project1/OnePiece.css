@@ -162,14 +162,13 @@ body{
         sailAcross 25s linear infinite,
         bob 2.5s ease-in-out infinite;
 }
-
 @keyframes sailAcross {
     from {
-        left: +220px;
+        left: -220px;
     }
 
     to {
-        left: calc(100% - 220px);
+        left: calc(100% + 220px);
     }
 }
 
