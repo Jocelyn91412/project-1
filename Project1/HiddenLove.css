@@ -1,5 +1,5 @@
 body{
-    cursor: url("images/heart.png") 32 32, auto;
+    cursor: url("../images/heart.png") 32 32, auto;
     background-color:#FDFBF7 ;
     color:#AEC6CF ;
 }
