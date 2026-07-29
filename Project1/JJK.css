@@ -208,3 +208,104 @@ body{
     }
 
 }
+.yuji-hover {
+    position: relative;
+}
+
+
+/* Black Flash energy */
+.black-flash {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 999;
+
+    pointer-events: none;
+    opacity: 0;
+
+    background:
+        radial-gradient(circle,
+        white 0%,
+        #000000 15%,
+        #1a1a1a 35%,
+        transparent 70%);
+
+    filter:
+        drop-shadow(0 0 30px black)
+        drop-shadow(0 0 80px white);
+
+}
+
+
+/* Lightning cracks */
+.black-flash::before {
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+        repeating-conic-gradient(
+            from 0deg,
+            transparent 0deg,
+            black 5deg,
+            transparent 10deg
+        );
+
+    opacity: 0.8;
+
+    animation: lightning 0.15s infinite;
+}
+
+
+/* Activate when hovering Yuji */
+.yuji-hover:hover .black-flash {
+
+    animation: blackFlashAttack 0.5s ease;
+
+}
+
+
+/* Explosion */
+@keyframes blackFlashAttack {
+
+    0% {
+        opacity: 1;
+        transform: scale(0.2);
+    }
+
+    30% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    60% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
+
+
+/* Moving black lightning */
+@keyframes lightning {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
