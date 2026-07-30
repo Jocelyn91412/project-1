@@ -24,13 +24,13 @@ h2 {
 .intro {
     text-align: center;
     color: #4A0E4E ;
-    font-size: 40px;
+    font-size: 36px;
 }
 
 .info {
-    text-align: #4A0E4E ;
-    color: white;
-    font-size: 28px;
+    text-align: center ;
+    color: #4A0E4E;
+    font-size: 25px;
 }
 
 .ol {
