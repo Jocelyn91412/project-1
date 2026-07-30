@@ -23,18 +23,18 @@ h2 {
 
 .intro {
     text-align: center;
-    color: white;
+    color: #9CA995;
     font-size: 40px;
 }
 
 .info {
-    text-align: center;
+    text-align: #9CA995;
     color: white;
     font-size: 28px;
 }
 
 .ol {
-    color: white;
+    color: #9CA995;
     font-size: 50px;
     text-align: center;
 }
